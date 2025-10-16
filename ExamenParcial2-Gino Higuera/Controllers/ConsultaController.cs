@@ -17,6 +17,7 @@ public class ConsultaController : Controller
         return View();
     }
     #region ObtenerCitas
+    //Metodo para obtener todas las citas con detalles del paciente y doctor
     public async Task<IActionResult> ObtenerCitas()
     {
         var citas = await _context.Citas
@@ -35,6 +36,7 @@ public class ConsultaController : Controller
     }
     #endregion
     #region FiltrarCitas
+    //Metodo para filtrar citas por paciente
     public async Task<IActionResult> FiltrarPorPaciente(int pacienteId)
     {
         var citas = await _context.Citas
@@ -54,6 +56,7 @@ public class ConsultaController : Controller
     }
     #endregion
     #region FiltrarCitas
+    //Metodo para filtrar citas por doctor
     public async Task<IActionResult> FiltrarPorDoctor(int doctorId)
     {
         var citas = await _context.Citas
