@@ -20,19 +20,19 @@ namespace ExamenParcial2_Gino_Higuera.Data
             #region Pacientes
             //Datos de semilla de pacientes
             modelBuilder.Entity<Paciente>().HasData(
-                new Paciente { PacienteId = 1, Nombre = "Juan", Apellido = "Perez" },
-                new Paciente { PacienteId = 2, Nombre = "Maria", Apellido = "Lopez" },
-                new Paciente { PacienteId = 3, Nombre = "Carlos", Apellido = "Sanchez" },
-                new Paciente { PacienteId = 4, Nombre = "Ana", Apellido = "Martinez" },
-                new Paciente { PacienteId = 5, Nombre = "Luis", Apellido = "Gomez" }
+                new Paciente { PacienteId = 1, Nombre = "Gino", Apellido = "Higuera" },
+                new Paciente { PacienteId = 2, Nombre = "Efrain", Apellido = "Garcia" },
+                new Paciente { PacienteId = 3, Nombre = "Luis", Apellido = "Montes de Oca" },
+                new Paciente { PacienteId = 4, Nombre = "An", Apellido = "Gomez" },
+                new Paciente { PacienteId = 5, Nombre = "Raul", Apellido = "Leal" }
             );
             #endregion
             #region Doctores
             //Datos de semilla de doctores
             modelBuilder.Entity<Doctor>().HasData(
-                new Doctor { DoctorId = 1, Nombre = "Dr. Smith", Especialidad = "Cardiología" },
-                new Doctor { DoctorId = 2, Nombre = "Dr. Johnson", Especialidad = "Pediatría" },
-                new Doctor { DoctorId = 3, Nombre = "Dr. Brown", Especialidad = "Dermatología" }
+                new Doctor { DoctorId = 1, Nombre = "Dr. Vallarta", Especialidad = "Cardiología" },
+                new Doctor { DoctorId = 2, Nombre = "Dr. Escamilla", Especialidad = "Pediatría" },
+                new Doctor { DoctorId = 3, Nombre = "Dr. Polopolo", Especialidad = "Dermatología" }
             );
             #endregion
             #region Citas

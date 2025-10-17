@@ -25,7 +25,7 @@ app.UseStaticFiles();
 app.UseRouting();
 
 app.UseAuthorization();
-// Definir la ruta por defecto para el controlador Consulta
+
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Consulta}/{action=Index}/{id?}");
